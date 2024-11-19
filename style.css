@@ -1,0 +1,472 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd6e0;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 20px;
+  }
+  
+  /* Page Styles */
+  
+  /* LOGIN PAGE */
+  .login_container {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login_container h2 {
+    color: #ff4b6e;
+    margin-bottom: 1.5rem;
+  }
+  .login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .login_form input {
+    padding: 0.8rem;
+    border: 2px solid #ffd6e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .login_form input:focus {
+    outline: none;
+    border-color: #ff4b6e;
+  }
+  
+  .login_form button {
+    background: #ff4b6e;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login_form button:hover {
+    background: #ff1f4c;
+  }
+  
+  .login_description {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #ffd6ff 0%, #fffae6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Decorative elements */
+  .container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50l2-2 2 2-2 2z' fill='%23ff6347' fill-opacity='0.1'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .one {
+    margin-top: 30px;
+    animation: slideDown 1.5s ease-out;
+  }
+  
+  .one h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(45deg, #ff6347, #ff8c69);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    transform-origin: left;
+    animation: scaleIn 1s ease-out;
+  }
+  
+  .two {
+    font-size: 1.6rem;
+    color: #555;
+    font-weight: 500;
+    margin-top: 15px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+  }
+  
+  .three {
+    font-size: 2.2rem;
+    background: linear-gradient(45deg, #4CAF50, #69F0AE);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 30px;
+    animation: bounce 1s ease infinite;
+  }
+  
+  .four {
+    margin-top: 40px;
+    transform: scale(0);
+    animation: popIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s forwards;
+  }
+  
+  .text-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    transform: translateY(20px);
+    animation: floatUp 1s ease-out forwards;
+  }
+  
+  .hbd-chatbox {
+    font-size: 1.3rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .fake-btn {
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(45deg, #ff6347, #ff8c69);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 99, 71, 0.4);
+}
+
+.fake-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 99, 71, 0.6);
+}
+
+  
+  .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 {
+    font-size: 1.4rem;
+    color: #444;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .idea-1 { animation: slideUp 0.8s ease-out 2s forwards; }
+  .idea-2 { animation: slideUp 0.8s ease-out 2.5s forwards; }
+  .idea-3 { animation: slideUp 0.8s ease-out 3s forwards; }
+  .idea-4 { animation: slideUp 0.8s ease-out 3.5s forwards; }
+  .idea-5 { animation: slideUp 0.8s ease-out 4s forwards; }
+  .idea-6 { animation: slideUp 0.8s ease-out 4.5s forwards; }
+  
+  .idea-5 span {
+    font-size: 2.2rem;
+    color: #ff6347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: heartBeat 1.5s ease infinite;
+  }
+  
+  .six {
+    margin-top: 60px;
+    position: relative;
+  }
+  
+  .profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: profilePop 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .hat {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    animation: hatBounce 2s ease infinite;
+  }
+  
+  .wish {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wish h3 {
+    font-size: 2.8rem;
+    background: linear-gradient(45deg, #ff6347, #ff8c69);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .wish-text {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .ballons {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .ballons img {
+    position: absolute;
+    width: 50px;
+    animation: balloonFloat 15s linear infinite;
+  }
+  
+  .eight {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 15px;
+  }
+  
+  .eight svg {
+    width: 45px;
+    height: 45px;
+    fill: #ff6347;
+    animation: pulse 2s ease infinite;
+    filter: drop-shadow(0 4px 8px rgba(255, 99, 71, 0.3));
+  }
+  
+  .nine {
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    max-width: 600px;
+  }
+  
+  .last-smile {
+    font-size: 2.5rem;
+    color: #ff6347;
+    animation: bounce 2s ease infinite;
+  }
+  
+  #replay {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #4CAF50;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: rgba(76, 175, 80, 0.1);
+  }
+  
+  #replay:hover {
+    transform: scale(1.05);
+    background: rgba(76, 175, 80, 0.2);
+  }
+  
+  /* Enhanced Animations */
+  @keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  @keyframes popIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  @keyframes floatUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes heartBeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.3); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.3); }
+    70% { transform: scale(1); }
+  }
+  
+  @keyframes profilePop {
+    from { transform: scale(0) rotate(-180deg); }
+    to { transform: scale(1) rotate(0); }
+  }
+  
+  @keyframes hatBounce {
+    0%, 100% { transform: translateX(-50%) rotate(-15deg); }
+    50% { transform: translateX(-50%) rotate(15deg); }
+  }
+  
+  @keyframes balloonFloat {
+    0% { 
+      transform: translateY(100vh) translateX(0) rotate(0);
+      opacity: 1;
+    }
+    100% { 
+      transform: translateY(-100vh) translateX(100px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .one h1 { font-size: 2.5rem; }
+    .two { font-size: 1.3rem; }
+    .three { font-size: 1.8rem; }
+    .hbd-chatbox { font-size: 1.2rem; }
+    .wish h3 { font-size: 2.2rem; }
+    .wish-text { font-size: 1.1rem; }
+    .profile-picture { width: 150px; height: 150px; }
+    .hat { width: 60px; top: -30px; }
+  }
+  
+  @media (max-width: 480px) {
+    .one h1 { font-size: 2rem; }
+    .two { font-size: 1.1rem; }
+    .three { font-size: 1.5rem; }
+    .text-box { padding: 20px; }
+    .idea-1, .idea-2, .idea-3, .idea-4, .idea-5, .idea-6 { font-size: 1.2rem; }
+    .wish h3 { font-size: 1.8rem; }
+    .profile-picture { width: 120px; height: 120px; }
+  }
+  
+  /* Style untuk Pop-up */
+.popup {
+  display: none; /* Pop-up tidak muncul secara default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4500;
+}
+
+.fake-btn {
+  cursor: pointer;
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.fake-btn:hover {
+  background-color: #ff4500;
+}
