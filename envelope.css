@@ -1,17 +1,26 @@
+/* Global Styles */
 body {
-    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(255, 239, 255);
 }
-  .envelope-container{
+
+/* Envelope Styles */
+.envelope-container {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     opacity: 0;
     animation: dudu 3s ease 5.8s 1 alternate forwards;
-    transform-origin: 0 0;
+    transform-origin: center center;
     z-index: 1;
 }
-  .envelope {
+
+.envelope {
     width: 224px;
     height: 224px;
     overflow: hidden;
@@ -19,8 +28,9 @@ body {
     transition: all ease;
     animation: tremble 1s infinite;
     margin: auto;
-  }
-  .envelope--base {
+}
+
+.envelope--base {
     top: 100px;
     z-index: 2;
     width: 220px;
@@ -29,8 +39,9 @@ body {
     border-radius: 4px;
     border: 2px solid #00000024;
     background-color: rgb(254, 168, 182);
-  }
-  .envelope__tab {
+}
+
+.envelope__tab {
     left: 28px;
     z-index: 1;
     bottom: 26px;
@@ -41,8 +52,9 @@ body {
     border-top-left-radius: 30px;
     background-color: pink;
     border: 2px solid #00000024;
-  }
-  .envelope__letter {
+}
+
+.envelope__letter {
     left: 29px;
     z-index: 3;
     width: 158px;
@@ -60,13 +72,14 @@ body {
     border: 1px solid #00000024;
     transition: all 0.6s linear 0.4s;
     background-image: url("https://i.pinimg.com/564x/bd/27/23/bd2723cccfec31aeb82b41034fdd2933.jpg");
-  }
-  .envelope:hover .envelope__letter {
+}
+
+.envelope:hover .envelope__letter {
     height: 200px;
     color: #4c4444;
-  }
+}
 
-  .envelope__letter:before {
+.envelope__letter:before {
     content: "";
     height: 0;
     width: 6px;
@@ -77,29 +90,28 @@ body {
     border-left: 107px solid pink;
     border-right: 107px solid pink;
     border-bottom: 65px solid rgb(255, 174, 187);
-  }
-  @keyframes tremble {
+}
+
+@keyframes tremble {
     0% {
-      transform: rotate(-1deg);
+        transform: rotate(-1deg);
     }
     50% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     75% {
-      transform: rotate(1deg);
+        transform: rotate(1deg);
     }
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
+}
 
-  @keyframes dudu {
+@keyframes dudu {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
-} 
-  
+}
